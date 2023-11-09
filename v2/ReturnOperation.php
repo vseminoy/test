@@ -126,10 +126,6 @@ class ReturnOperation extends ReferencesOperation
                 $this->statusTo = $to;
             }
         }
-        if($this->statusFrom===false || $this->statusTo===false){
-            $errorMessage = 'Empty differences statuses';
-            return false;
-        }
         return true;
     }
 
